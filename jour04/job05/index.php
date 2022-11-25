@@ -15,7 +15,7 @@
 <?php
 
 if(isset($_POST["username"])and isset($_POST["password"])){
-    if ($_POST["username"]==="John" and $_POST["password"]==="Rambo"){
+    if (($_POST["username"]==="John" or $_POST["username"]==="john") and ($_POST["password"]==="Rambo" or $_POST["password"]==="rambo")){
         echo "C'est pas ma guerre";
     }
     else {
